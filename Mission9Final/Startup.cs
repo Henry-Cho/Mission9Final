@@ -4,11 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Mission9Final.Models;
 
 namespace Mission9Final
 {
@@ -31,11 +33,15 @@ namespace Mission9Final
             });
 
             services.AddScoped<Models.IBookRepository, Models.EFBookRepository>();
+            services.AddScoped<IShopperRepository, EFShopperRepository>();
             services.AddRazorPages();
 
             services.AddDistributedMemoryCache();
 
             services.AddSession();
+
+            services.AddScoped<Basket>(x => SessionBasket.GetBasket(x));
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

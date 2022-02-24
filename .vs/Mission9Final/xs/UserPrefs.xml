@@ -1,0 +1,55 @@
+﻿<Properties StartupConfiguration="{63F1F3DC-24D4-47E7-A954-A5AFE76D3A22}|Default">
+  <MonoDevelop.Ide.ItemProperties.Mission9Final PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Mission9Final/Pages/Shopping.cshtml">
+    <Files>
+      <File FileName="Mission9Final/Components/CartSummaryViewComponent.cs" Line="7" Column="6" />
+      <File FileName="Mission9Final/Views/Shared/Components/CartSummary/Default.cshtml" Line="14" Column="3" />
+      <File FileName="Mission9Final/Views/Shared/Components/Types/Default.cshtml" Line="7" Column="8" />
+      <File FileName="Mission9Final/Models/SessionBasket.cs" />
+      <File FileName="Mission9Final/Models/Shopper.cs" Line="1" Column="1" />
+      <File FileName="Mission9Final/Components/CategoriesViewComponent.cs" Line="1" Column="1" />
+      <File FileName="Mission9Final/Models/Basket.cs" Line="1" Column="1" />
+      <File FileName="Mission9Final/Views/Shared/_Layout.cshtml" Line="14" Column="29" />
+      <File FileName="Mission9Final/wwwroot/css/site.css" Line="93" Column="25" />
+      <File FileName="Mission9Final/Pages/Shopping.cshtml.cs" Line="1" Column="1" />
+      <File FileName="Mission9Final/Pages/Shopping.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Mission9Final" expanded="True">
+            <Node name="Mission9Final" expanded="True">
+              <Node name="Components" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Infrastructure" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Shopping.cshtml" expanded="True" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="Components" expanded="True">
+                    <Node name="CartSummary" expanded="True" />
+                    <Node name="Types" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="Shopper" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

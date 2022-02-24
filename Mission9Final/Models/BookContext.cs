@@ -15,6 +15,6 @@ namespace Mission9Final.Models
         }
 
         public DbSet<Book> Books { get; set; }
-        // public DbSet<Donation> Donations { get; set; }
+        public DbSet<Shopper> Shoppers { get; set; }
     }
 }

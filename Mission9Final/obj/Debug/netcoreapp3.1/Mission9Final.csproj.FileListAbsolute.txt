@@ -82,3 +82,6 @@
 /Users/hyungseokcho/Projects/Mission9Final/Mission9Final/obj/Debug/netcoreapp3.1/Mission9Final.Views.pdb
 /Users/hyungseokcho/Projects/Mission9Final/Mission9Final/obj/Debug/netcoreapp3.1/Mission9Final.csproj.CopyComplete
 /Users/hyungseokcho/Projects/Mission9Final/Mission9Final/obj/Debug/netcoreapp3.1/Mission9Final.genruntimeconfig.cache
+/Users/hyungseokcho/Projects/Mission9Final/Mission9Final/obj/Debug/netcoreapp3.1/Razor/Pages/ShoppingCompleted.cshtml.g.cs
+/Users/hyungseokcho/Projects/Mission9Final/Mission9Final/obj/Debug/netcoreapp3.1/Razor/Views/Shopper/Checkout.cshtml.g.cs
+/Users/hyungseokcho/Projects/Mission9Final/Mission9Final/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/CartSummary/Default.cshtml.g.cs

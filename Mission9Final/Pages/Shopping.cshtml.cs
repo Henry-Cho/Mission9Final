@@ -14,9 +14,10 @@ namespace Mission9Final.Pages
         public Basket basket { get; set; }
         public string ReturnUrl { get; set; }
 
-        public ShoppingModel(IBookRepository temp)
+        public ShoppingModel(IBookRepository temp, Basket b)
         {
             repo = temp;
+            basket = b;
         }
 
         // Get
@@ -24,8 +25,6 @@ namespace Mission9Final.Pages
         {
             // set the ReturnUrl which is going to be where a user can go back
             ReturnUrl = returnUrl ?? "/";
-            // If there is an object whose key is basket, get the json of the object or create a instance of Basket model
-            basket = HttpContext.Session.GetJson<Basket>("basket") ?? new Basket();
         }
 
         // Post
@@ -34,13 +33,22 @@ namespace Mission9Final.Pages
             // Get the specific book info that matches the given bookId
             Book p = repo.Books.FirstOrDefault(x => x.BookID == bookId);
 
-            // If there is an object whose key is basket, get the json of the object or create a instance of Basket model
-            basket = HttpContext.Session.GetJson<Basket>("basket") ?? new Basket();
             // Add item to the basket
             basket.AddItem(p, 1);
 
-            // Set the json with the newly added item
-            HttpContext.Session.SetJson("basket", basket);
+            return RedirectToPage(new { ReturnUrl = returnUrl });
+        }
+
+        // Remove Item (Post)
+        public IActionResult OnPostRemove(int bookId, string returnUrl)
+        {
+            // Find a specific book info by its BookId
+            //Book b = repo.Books.FirstOrDefault(x => x.BookID == bookId);
+            //basket.RemoveItem(b);
+
+            basket.RemoveItem(basket.Items.First(x => x.Book.BookID == bookId).Book);
+            // The code below this one line code (Functioning the same with the code above)
+            // basket.RemoveItem(basket.Items.First(x => x.ProjectId == projectId).Project);
 
             return RedirectToPage(new { ReturnUrl = returnUrl });
         }

@@ -10,11 +10,11 @@ namespace Mission9Final.Models
         public List<BasketLineItem> Items { get; set; } = new List<BasketLineItem>();
 
         // Add an item to the busket
-        public void AddItem(Book libre, int qty)
+        public virtual void AddItem(Book libre, int qty)
         {
             // get the line that matches its BookID
             BasketLineItem line = Items
-                .Where(p => p.Book.BookID == libre.BookID)
+                .Where(b => b.Book.BookID == libre.BookID)
                 .FirstOrDefault();
 
             // if line is null, create a new instance of BasketLineItem with the info in the parameter
@@ -32,6 +32,17 @@ namespace Mission9Final.Models
                 line.Quantity += qty;
             }
         }
+
+        public virtual void RemoveItem(Book book)
+        {
+            Items.RemoveAll(x => x.Book.BookID == book.BookID);
+        }
+
+        public virtual void ClearBasket()
+        {
+            Items.Clear();
+        }
+
 
         // Calculate the total sum (price) of the items in the basket
         public double CalculateTotal()

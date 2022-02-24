@@ -81,3 +81,14 @@ body {
 #typesM a {
     margin-bottom: 8px;
 }
+
+#cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart_sum {
+    min-width: 90px;
+    display: flex;
+    align-items: center;
+}

@@ -33,11 +33,13 @@ namespace Mission9Final.Models
             }
         }
 
+        // Remove items that match with the BookID
         public virtual void RemoveItem(Book book)
         {
             Items.RemoveAll(x => x.Book.BookID == book.BookID);
         }
 
+        // Clear the current basket
         public virtual void ClearBasket()
         {
             Items.Clear();

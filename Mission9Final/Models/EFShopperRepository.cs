@@ -17,8 +17,10 @@ namespace Mission9Final.Models
 
         public void SaveShopper(Shopper shopper)
         {
+            // Select Lines and its book info
             context.AttachRange(shopper.Lines.Select(x => x.Book));
 
+            // If there is no shopperId, just add it.
             if (shopper.ShopperId == 0)
             {
                 context.Shoppers.Add(shopper);

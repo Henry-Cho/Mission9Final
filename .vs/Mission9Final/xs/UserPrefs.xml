@@ -1,18 +1,18 @@
 ﻿<Properties StartupConfiguration="{63F1F3DC-24D4-47E7-A954-A5AFE76D3A22}|Default">
   <MonoDevelop.Ide.ItemProperties.Mission9Final PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Mission9Final/Pages/Shopping.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Mission9Final/Pages/Shopping.cshtml.cs">
     <Files>
       <File FileName="Mission9Final/Components/CartSummaryViewComponent.cs" Line="7" Column="6" />
-      <File FileName="Mission9Final/Views/Shared/Components/CartSummary/Default.cshtml" Line="14" Column="3" />
-      <File FileName="Mission9Final/Views/Shared/Components/Types/Default.cshtml" Line="7" Column="8" />
-      <File FileName="Mission9Final/Models/SessionBasket.cs" />
-      <File FileName="Mission9Final/Models/Shopper.cs" Line="1" Column="1" />
       <File FileName="Mission9Final/Components/CategoriesViewComponent.cs" Line="1" Column="1" />
-      <File FileName="Mission9Final/Models/Basket.cs" Line="1" Column="1" />
-      <File FileName="Mission9Final/Views/Shared/_Layout.cshtml" Line="14" Column="29" />
-      <File FileName="Mission9Final/wwwroot/css/site.css" Line="93" Column="25" />
-      <File FileName="Mission9Final/Pages/Shopping.cshtml.cs" Line="1" Column="1" />
+      <File FileName="Mission9Final/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Mission9Final/Controllers/ShopperController.cs" Line="52" Column="14" />
       <File FileName="Mission9Final/Pages/Shopping.cshtml" Line="1" Column="1" />
+      <File FileName="Mission9Final/Views/Shopper/Checkout.cshtml" Line="1" Column="1" />
+      <File FileName="Mission9Final/Models/Basket.cs" Line="39" Column="38" />
+      <File FileName="Mission9Final/Models/EFShopperRepository.cs" Line="23" Column="54" />
+      <File FileName="Mission9Final/Models/IShopperRepository.cs" Line="1" Column="1" />
+      <File FileName="Mission9Final/Models/SessionBasket.cs" Line="37" Column="32" />
+      <File FileName="Mission9Final/Pages/Shopping.cshtml.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,7 +25,9 @@
               <Node name="Migrations" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Pages" expanded="True">
-                <Node name="Shopping.cshtml" expanded="True" selected="True" />
+                <Node name="Shopping.cshtml" expanded="True">
+                  <Node name="Shopping.cshtml.cs" selected="True" />
+                </Node>
               </Node>
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />

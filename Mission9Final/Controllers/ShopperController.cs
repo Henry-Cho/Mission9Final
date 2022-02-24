@@ -22,24 +22,31 @@ namespace Mission9Final.Controllers
         }
 
         [HttpGet]
-        // GET: /<controller>/
+        // GET
         public IActionResult Checkout()
         {
+            // Show a form and put a Shopper instance in the parameter.
             return View(new Shopper());
         }
 
+        // POST
         [HttpPost]
         public IActionResult Checkout(Shopper shopper)
         {
+            // If there is no item in the basket
             if (basket.Items.Count() == 0)
             {
                 ModelState.AddModelError("", "Sorry, your basket is empty!");
             }
 
+            // If this model is valid
             if (ModelState.IsValid)
             {
+                // Make a array of basket items and put it in shopper.Lines
                 shopper.Lines = basket.Items.ToArray();
+                // Save the shopper
                 repo.SaveShopper(shopper);
+                // Clear the current basket after check out
                 basket.ClearBasket();
                 return RedirectToPage("/ShoppingCompleted");
             }

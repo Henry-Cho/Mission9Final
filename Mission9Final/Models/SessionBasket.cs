@@ -22,18 +22,19 @@ namespace Mission9Final.Models
         [JsonIgnore]
         public ISession Session { get; set; }
 
+        // Override AddItem
         public override void AddItem(Book book, int qty)
         {
             base.AddItem(book, qty);
             Session.SetJson("Basket", this);
         }
-
+        // Override RemoveItem
         public override void RemoveItem(Book book)
         {
             base.RemoveItem(book);
             Session.SetJson("Basket", this);
         }
-
+        // Override ClearBasket
         public override void ClearBasket()
         {
             base.ClearBasket();
